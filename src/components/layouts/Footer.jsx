@@ -1,8 +1,9 @@
 import React from 'react'
+import Logo from './Logo'
 
 const Footer = () => {
   return (
-    <footer className='footer sm:footer-horizontal bg-primary text-base-content p-10 '>
+    <div className='footer sm:footer-horizontal bg-primary text-base-content px-16 py-10 '>
       <nav>
         <h6 className='footer-title'>Services</h6>
         <a className='link link-hover'>Branding</a>
@@ -55,7 +56,7 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-    </footer>
+    </div>
   )
 }
 

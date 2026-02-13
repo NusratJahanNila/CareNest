@@ -84,7 +84,7 @@ export default function Testimonial() {
                 ))}
               </div>
               
-              {/* Quote Icon */}
+              {/*  Icon */}
               <FaQuoteLeft className="text-3xl text-primary mb-4" />
               
               {/* Testimonial Text */}

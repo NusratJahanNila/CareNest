@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { FaHeart, FaShieldAlt, FaHandsHelping, FaHome } from 'react-icons/fa'
 
-export default function AboutSection () {
+export default function About () {
   return (
     <section className='py-20 bg-white'>
       <div className='container mx-auto px-4'>
