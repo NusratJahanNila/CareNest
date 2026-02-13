@@ -98,7 +98,7 @@ export default function ServiceCard({ service }) {
             </div>
           </div>
           
-          <Link href={`/service/${service.service_id}`}>
+          <Link href={`/services/${service._id}`}>
             <button className="bg-[#3b4b21] hover:bg-[#2a3718] text-white px-6 py-2.5 rounded-xl text-sm font-medium transition-all hover:shadow-lg hover:scale-105">
               View Details
             </button>

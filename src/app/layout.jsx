@@ -7,6 +7,15 @@ const poppings = Poppins({
   weight: ['100', '200', '400', '500', '600', '800']
 })
 
+// metadata
+export const metadata={
+  title:{
+    default: "CareNest",
+    template: "%s | CareNest"
+  },
+  description: "Making caregiving easy, secure, and accessible for every family!"
+}
+
 export default function RootLayout ({ children }) {
   return (
     <html lang='en'>
