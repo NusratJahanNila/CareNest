@@ -4,6 +4,7 @@ import Navbar from '@/components/layouts/Navbar'
 import Footer from '@/components/layouts/Footer'
 import Banner from '@/components/layouts/Banner'
 import About from '@/components/layouts/About'
+import Testimonial from '@/components/layouts/Testimonial'
 
 const poppings = Poppins({
   weight: ['100', '200', '400', '500', '600', '800']
@@ -23,6 +24,7 @@ export default function RootLayout ({ children }) {
         <main className='py-2 md:w-11/12 mx-auto'>
           <About></About>
           {children}
+          <Testimonial></Testimonial>
         </main>
 
         {/* footer */}
