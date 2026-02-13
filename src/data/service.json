@@ -1,0 +1,330 @@
+[
+  {
+    "service_id": "baby-care-001",
+    "title": "Infant Baby Care",
+    "category": "Baby Care",
+    "shortDescription": "Professional caregivers for newborns and infants (0-2 years).",
+    "description": "Trained caregivers provide feeding, diaper changing, bathing, sleep monitoring, and safe playtime engagement for infants.",
+    "pricePerHour": 300,
+    "pricePerDay": 2000,
+    "rating": 4.8,
+    "totalReviews": 124,
+    "totalBookings": 540,
+    "availability": "Available",
+    "featured": true,
+    "tags": ["newborn care", "night shift", "CPR certified"],
+    "caregiverInfo": {
+      "experience": "3+ years experience",
+      "certifications": ["Infant CPR", "First Aid"],
+      "backgroundVerified": true
+    },
+    "faqs": [
+      {
+        "question": "Are caregivers CPR certified?",
+        "answer": "Yes, all caregivers are certified in infant CPR."
+      },
+      {
+        "question": "Can I book night shifts?",
+        "answer": "Yes, both day and night shifts are available."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Ayesha Rahman",
+        "rating": 5,
+        "comment": "Very caring and professional.",
+        "date": "2025-12-10"
+      },
+      {
+        "name": "Farhan Ahmed",
+        "rating": 4,
+        "comment": "Good service and punctual.",
+        "date": "2025-11-18"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Infant Baby Care Service | Care.xyz",
+      "metaDescription": "Trusted infant baby care at home with verified caregivers.",
+      "keywords": ["baby care", "infant babysitter", "home baby care"]
+    },
+    "image": "https://ibb.co.com/8LBkpPSg",
+    "createdAt": "2025-01-15T10:00:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "baby-care-002",
+    "title": "Babysitting Service",
+    "category": "Baby Care",
+    "shortDescription": "Reliable babysitters for children aged 3-10 years.",
+    "description": "Safe babysitting with homework help, meal support, and fun activities.",
+    "pricePerHour": 250,
+    "pricePerDay": 1800,
+    "rating": 4.6,
+    "totalReviews": 98,
+    "totalBookings": 420,
+    "availability": "Available",
+    "featured": false,
+    "tags": ["homework help", "play activities"],
+    "caregiverInfo": {
+      "experience": "2+ years childcare experience",
+      "certifications": ["First Aid"],
+      "backgroundVerified": true
+    },
+    "faqs": [
+      {
+        "question": "Do caregivers help with homework?",
+        "answer": "Yes, homework assistance is included."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Mariam Khan",
+        "rating": 5,
+        "comment": "My kids loved the caregiver!",
+        "date": "2025-11-02"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Babysitting Service | Care.xyz",
+      "metaDescription": "Book trusted babysitters for your children.",
+      "keywords": ["babysitter", "child care", "kids service"]
+    },
+    "image": "https://ibb.co.com/GQZ9LL2Z",
+    "createdAt": "2025-01-12T09:00:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "elderly-care-001",
+    "title": "Elderly Home Care",
+    "category": "Elderly Care",
+    "shortDescription": "Daily assistance for senior citizens.",
+    "description": "Mobility support, medication reminders, companionship and meal preparation.",
+    "pricePerHour": 350,
+    "pricePerDay": 2500,
+    "rating": 4.9,
+    "totalReviews": 210,
+    "totalBookings": 870,
+    "availability": "Limited Slots",
+    "featured": true,
+    "tags": ["senior care", "companionship"],
+    "caregiverInfo": {
+      "experience": "5+ years experience",
+      "certifications": ["Basic Nursing", "First Aid"],
+      "backgroundVerified": true
+    },
+    "faqs": [
+      {
+        "question": "Is 24-hour service available?",
+        "answer": "Yes, depending on availability."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Shahidul Islam",
+        "rating": 5,
+        "comment": "Excellent elderly support.",
+        "date": "2025-12-01"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Elderly Care Service | Care.xyz",
+      "metaDescription": "Professional elderly home care services.",
+      "keywords": ["elderly care", "senior caregiver"]
+    },
+    "image": "https://ibb.co.com/nqdMh6Gm",
+    "createdAt": "2025-01-10T09:30:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "elderly-care-002",
+    "title": "24/7 Elderly Support",
+    "category": "Elderly Care",
+    "shortDescription": "Round-the-clock elderly monitoring.",
+    "description": "Continuous elderly care including health monitoring and mobility assistance.",
+    "pricePerHour": 400,
+    "pricePerDay": 3000,
+    "rating": 4.9,
+    "totalReviews": 150,
+    "totalBookings": 600,
+    "availability": "Available",
+    "featured": true,
+    "tags": ["24/7 care", "medical support"],
+    "caregiverInfo": {
+      "experience": "6+ years experience",
+      "certifications": ["CPR", "Nursing Training"],
+      "backgroundVerified": true
+    },
+    "faqs": [],
+    "reviews": [
+      {
+        "name": "Nasrin Begum",
+        "rating": 5,
+        "comment": "Very reliable 24-hour service.",
+        "date": "2025-10-21"
+      }
+    ],
+    "seo": {
+      "metaTitle": "24/7 Elderly Care | Care.xyz",
+      "metaDescription": "Full-time elderly support at home.",
+      "keywords": ["24 hour elderly care"]
+    },
+    "image": "https://ibb.co.com/yBK8XRnf",
+    "createdAt": "2025-01-09T08:00:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "sick-care-001",
+    "title": "Post-Surgery Care",
+    "category": "Sick Care",
+    "shortDescription": "Recovery assistance after surgery.",
+    "description": "Home-based recovery support including wound care and medication tracking.",
+    "pricePerHour": 380,
+    "pricePerDay": 2700,
+    "rating": 4.7,
+    "totalReviews": 85,
+    "totalBookings": 300,
+    "availability": "Available",
+    "featured": false,
+    "tags": ["post surgery", "recovery care"],
+    "caregiverInfo": {
+      "experience": "4+ years",
+      "certifications": ["Nursing Training"],
+      "backgroundVerified": true
+    },
+    "faqs": [],
+    "reviews": [
+      {
+        "name": "Imran Hossain",
+        "rating": 4,
+        "comment": "Helped during my recovery.",
+        "date": "2025-09-15"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Post Surgery Care | Care.xyz",
+      "metaDescription": "Professional recovery care at home.",
+      "keywords": ["post surgery care"]
+    },
+    "image": "https://ibb.co.com/wNmmwzTZ",
+    "createdAt": "2025-01-05T07:00:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "sick-care-002",
+    "title": "Chronic Illness Care",
+    "category": "Sick Care",
+    "shortDescription": "Long-term chronic patient support.",
+    "description": "Support for diabetes, heart disease and other chronic conditions.",
+    "pricePerHour": 360,
+    "pricePerDay": 2600,
+    "rating": 4.8,
+    "totalReviews": 120,
+    "totalBookings": 450,
+    "availability": "Available",
+    "featured": false,
+    "tags": ["chronic care", "long term"],
+    "caregiverInfo": {
+      "experience": "5+ years",
+      "certifications": ["Health Monitoring"],
+      "backgroundVerified": true
+    },
+    "faqs": [],
+    "reviews": [
+      {
+        "name": "Rafiq Ahmed",
+        "rating": 5,
+        "comment": "Great long-term support.",
+        "date": "2025-08-10"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Chronic Illness Care | Care.xyz",
+      "metaDescription": "Long-term illness care service.",
+      "keywords": ["chronic illness support"]
+    },
+    "image": "https://ibb.co.com/TxkHjZxf",
+    "createdAt": "2025-01-03T06:00:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "special-care-001",
+    "title": "Special Needs Child Care",
+    "category": "Special Care",
+    "shortDescription": "Care for children with special needs.",
+    "description": "Structured support for children with autism, ADHD or disabilities.",
+    "pricePerHour": 420,
+    "pricePerDay": 3000,
+    "rating": 4.9,
+    "totalReviews": 70,
+    "totalBookings": 220,
+    "availability": "Limited Slots",
+    "featured": true,
+    "tags": ["autism care", "ADHD support"],
+    "caregiverInfo": {
+      "experience": "Specialized training",
+      "certifications": ["Special Child Care Training"],
+      "backgroundVerified": true
+    },
+    "faqs": [],
+    "reviews": [
+      {
+        "name": "Tania Sultana",
+        "rating": 5,
+        "comment": "Very supportive and patient.",
+        "date": "2025-07-19"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Special Needs Child Care | Care.xyz",
+      "metaDescription": "Professional care for special needs children.",
+      "keywords": ["special child care"]
+    },
+    "image": "https://ibb.co.com/5WYmb8Cc",
+    "createdAt": "2025-01-02T05:00:00Z",
+    "isActive": true
+  },
+
+  {
+    "service_id": "companion-care-001",
+    "title": "Companion Care Service",
+    "category": "Elderly Care",
+    "shortDescription": "Emotional companionship for seniors.",
+    "description": "Friendly caregivers provide conversation, light activities and emotional support.",
+    "pricePerHour": 280,
+    "pricePerDay": 1900,
+    "rating": 4.5,
+    "totalReviews": 65,
+    "totalBookings": 180,
+    "availability": "Available",
+    "featured": false,
+    "tags": ["companionship", "senior support"],
+    "caregiverInfo": {
+      "experience": "3+ years",
+      "certifications": ["First Aid"],
+      "backgroundVerified": true
+    },
+    "faqs": [],
+    "reviews": [
+      {
+        "name": "Abdul Karim",
+        "rating": 4,
+        "comment": "Very friendly caregiver.",
+        "date": "2025-06-11"
+      }
+    ],
+    "seo": {
+      "metaTitle": "Companion Care | Care.xyz",
+      "metaDescription": "Companion service for elderly people.",
+      "keywords": ["companion care"]
+    },
+    "image": "https://ibb.co.com/fVR6Sgdq",
+    "createdAt": "2025-01-01T04:00:00Z",
+    "isActive": true
+  }
+]
