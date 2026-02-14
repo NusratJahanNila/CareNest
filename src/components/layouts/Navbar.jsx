@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import NavLinks from '../buttons/NavLinks'
 import Link from 'next/link'
+import AuthButtons from '../buttons/AuthButtons'
 
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='navbar-end'>
-          <Link href={"/login"} className='btn btn-primary text-accent-content btn-outline font-semibold'>Login</Link>
+          <AuthButtons/>
         </div>
       </div>
     </div>

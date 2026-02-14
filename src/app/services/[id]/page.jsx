@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { 
   FaStar, 
   FaCheckCircle, 
-  FaClock, 
   FaUserCheck, 
   FaShieldAlt, 
   FaAward,
@@ -15,12 +14,23 @@ import {
   FaShareAlt,
   FaBookmark
 } from 'react-icons/fa';
-import { getSingleService } from '@/actions/server/service';
+import {getSingleService } from '@/actions/server/service';
+import BookingButton from '@/components/buttons/BookingButton';
 
-// metadata
-export const metadata={
-  title:"Service Details",
-  description: "Making caregiving easy, secure, and accessible for every family!"
+// meta data
+export async function generateMetadata({ params }) {
+    const {id}=await params;
+  const service = await getSingleService(id);
+  
+  return {
+    title: service.title,
+    description: service.shortDescription,
+    openGraph: {
+      title: `${service.title} | CareNest`,
+      description: service.shortDescription,
+      images: [service.image || 'https://i.ibb.co.com/wZczy4HW/image.png'],
+    },
+  };
 }
 
 const ServiceDetails = async({ params }) => {
@@ -28,19 +38,18 @@ const ServiceDetails = async({ params }) => {
     const {id}=await params;
     const service=await getSingleService(id);
     
-    // 🟢 ADD THIS: Check if service exists
-    if (!service) {
-      return (
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold text-[#2C3E50] mb-4">Service Not Found</h2>
-            <Link href="/" className="text-[#3b4b21] underline">
-              Return to Home
-            </Link>
-          </div>
-        </div>
-      );
-    }
+    // if (!service) {
+    //   return (
+    //     <div className="min-h-screen flex items-center justify-center">
+    //       <div className="text-center">
+    //         <h2 className="text-2xl font-bold text-[#2C3E50] mb-4">Service Not Found</h2>
+    //         <Link href="/" className="text-[#3b4b21] underline">
+    //           Return to Home
+    //         </Link>
+    //       </div>
+    //     </div>
+    //   );
+    // }
   
     // Format currency
     const formatCurrency = (amount) => {
@@ -66,7 +75,7 @@ const ServiceDetails = async({ params }) => {
                         <div className="lg:w-1/2">
                             <div className="relative h-75 lg:h-100 w-full rounded-2xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src={service?.image || '/placeholder.jpg'} // 🟢 Add fallback
+                                    src={service?.image || '/placeholder.jpg'} 
                                     alt={service?.title || 'Service image'}
                                     fill
                                     className="object-cover"
@@ -148,13 +157,8 @@ const ServiceDetails = async({ params }) => {
                                 </div>
                             </div>
 
-                            {/* Book Button - 🟢 FIXED with service_id */}
-                            <Link href={`/booking/${service?.service_id}`}>
-                                <button className="w-full bg-[#3b4b21] hover:bg-[#2a3718] text-white py-4 rounded-xl text-lg font-semibold transition-all hover:shadow-xl hover:scale-[1.02] flex items-center justify-center gap-3">
-                                    <FaCalendarAlt />
-                                    Book This Service
-                                </button>
-                            </Link>
+                            {/* Booking Button  */}
+                            <BookingButton service={service}/>
                         </div>
                     </div>
                 </div>
