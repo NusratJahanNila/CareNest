@@ -1,0 +1,35 @@
+{
+  "cities": {
+    "dhaka": [
+      "Gulshan", "Banani", "Uttara", "Mirpur", "Dhanmondi", "Mohammadpur",
+      "Motijheel", "Farmgate", "Shahbag", "Malibagh", "Rampura", "Badda",
+      "Tejgaon", "Paltan", "Lalbagh", "Azimpur", "Mohakhali", "Baridhara",
+      "Bashundhara", "Niketan", "Nikunja", "Cantonment"
+    ],
+    "chattogram": [
+      "Agrabad", "Halishahar", "Khulshi", "Pahartali", "Nasirabad", "Chawkbazar",
+      "Panchlaish", "Bayezid", "Patenga", "Double Mooring", "Kotwali", "Bakalia"
+    ],
+    "rajshahi": [
+      "Boalia", "Motihar", "Shah Makhdum", "Rajpara", "Kazla", "Upashahar",
+      "Binodpur", "Sapura", "Talaimari"
+    ],
+    "khulna": [
+      "Khulna Sadar", "Sonadanga", "Khalishpur", "Daulatpur", "Aranghata",
+      "Boyra", "Nirala", "Gollamari", "Fultala"
+    ],
+    "barishal": [
+      "Barishal Sadar", "Kawnia", "Nathullabad", "Rupatali", "Jagua", "Saheberhat"
+    ],
+    "sylhet": [
+      "Sylhet Sadar", "Ambarkhana", "Laldighi", "Zindabazar", "Bandarbazar",
+      "Subidbazar", "Khadimnagar", "Mirabazar", "Tilaghor"
+    ],
+    "rangpur": [
+      "Rangpur Sadar", "Carmichael", "Dhap", "Keranipara", "Modern", "Station Road"
+    ],
+    "mymensingh": [
+      "Mymensingh Sadar", "Kewatkhali", "Maskanda", "Shambhuganj", "Biddyaganj"
+    ]
+  }
+}

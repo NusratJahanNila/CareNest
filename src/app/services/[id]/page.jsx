@@ -37,21 +37,6 @@ const ServiceDetails = async({ params }) => {
 
     const {id}=await params;
     const service=await getSingleService(id);
-    
-    // if (!service) {
-    //   return (
-    //     <div className="min-h-screen flex items-center justify-center">
-    //       <div className="text-center">
-    //         <h2 className="text-2xl font-bold text-[#2C3E50] mb-4">Service Not Found</h2>
-    //         <Link href="/" className="text-[#3b4b21] underline">
-    //           Return to Home
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   );
-    // }
-  
-    // Format currency
     const formatCurrency = (amount) => {
         if (!amount) return '৳0';
         return new Intl.NumberFormat('en-BD', {
@@ -158,7 +143,7 @@ const ServiceDetails = async({ params }) => {
                             </div>
 
                             {/* Booking Button  */}
-                            <BookingButton service={service}/>
+                            <BookingButton service={{...service, _id:service._id.toString()}}/>
                         </div>
                     </div>
                 </div>
