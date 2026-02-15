@@ -12,7 +12,7 @@ export const metadata = {
 };
 const ServicesPage = () => {
     return (
-       <section className="md:w-11/12 mx-auto">
+       <section className="bg-base-200">
         <Services/>
       </section>
     );

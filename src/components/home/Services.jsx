@@ -6,8 +6,8 @@ import { getServices } from '@/actions/server/service'
 const Services = async() => {
     const services=(await getServices()) || [];
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="md:w-11/12 mx-auto ">
+      <div className="py-16 px-4">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">

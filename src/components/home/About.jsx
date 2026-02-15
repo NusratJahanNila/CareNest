@@ -4,21 +4,17 @@ import { FaHeart, FaShieldAlt, FaHandsHelping, FaHome } from 'react-icons/fa'
 
 export default function About () {
   return (
-    <section className='py-20 bg-white'>
+    <section className='py-16 bg-white'>
       <div className='container mx-auto px-4'>
         {/* Section Header */}
-        <div className='text-center max-w-3xl mx-auto mb-16'>
-          <h2 className='text-4xl md:text-5xl font-bold text-[#2C3E50] mb-6'>
-            Our Mission
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-[#3b4b21] font-semibold text-sm uppercase tracking-wider">
+             Our Mission
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2C3E50] mt-4 mb-6">
+            Trusted care at home
           </h2>
-          <div className='w-24 h-1 bg-[#9CAF88] mx-auto mb-6'></div>
-          <p className='text-lg text-gray-600'>
-            Making caregiving{' '}
-            <span className='text-[#3b4b21] font-semibold'>
-              easy, secure, and accessible
-            </span>{' '}
-            for every family
-          </p>
+          <div className="w-24 h-1 bg-[#9CAF88] mx-auto"></div>
         </div>
 
         <div className='flex flex-col lg:flex-row items-center gap-12 lg:gap-16'>
