@@ -1,7 +1,9 @@
 "use server";
 
 import { dbConnect, collections } from "@/lib/dbConnect";
+import { bookingInvoice } from "@/lib/bookingInvoice";
 import { ObjectId } from "mongodb";
+import { sendEmail } from "@/lib/sendEmail";
 
 //  create booking
 export const createBooking = async (bookingData) => {
@@ -9,7 +11,25 @@ export const createBooking = async (bookingData) => {
     const result = await dbConnect(collections.BOOKINGS).insertOne({
       ...bookingData,
       createdAt: new Date(),
+      status: bookingData.status || "pending",
     });
+
+    // invoice email
+      await sendEmail({
+        to: bookingData.userEmail,
+        subject: `Booking Confirmed - CareNest (${bookingData.serviceName})`,
+        html: bookingInvoice({
+          bookingId: result.insertedId.toString(),
+          serviceName: bookingData.serviceName,
+          duration: bookingData.duration,
+          location: bookingData.location,
+          totalCost: bookingData.totalCost,
+          userName: bookingData.userName,
+          bookingDate: new Date(),
+          status: "pending",
+        })
+      })
+  
 
     return {
       success: true,
@@ -27,10 +47,28 @@ export const createBooking = async (bookingData) => {
 
 
 // GET BOOKINGS BY USER EMAIL
+// export const getUserBookings = async (email) => {
+//   try {
+//     const bookings = await dbConnect(collections.BOOKINGS)
+//       .find({ "user.email": email })
+//       .sort({ createdAt: -1 })
+//       .toArray();
+
+//     return bookings.map(b => ({
+//       ...b,
+//       _id: b._id.toString(),
+//     }));
+
+//   } catch (error) {
+//     console.error("getUserBookings error:", error);
+//     return [];
+//   }
+// };
 export const getUserBookings = async (email) => {
   try {
+    // Filter by user email
     const bookings = await dbConnect(collections.BOOKINGS)
-      .find({ "user.email": email })
+      .find({ "userEmail": email })
       .sort({ createdAt: -1 })
       .toArray();
 
@@ -68,7 +106,7 @@ export const getSingleBooking = async (id) => {
 };
 
 
-// ✅ UPDATE BOOKING STATUS (cancel, confirm, complete)
+// UPDATE BOOKING STATUS (cancel, confirm, complete)
 export const updateBookingStatus = async (id, status) => {
   try {
     if (!ObjectId.isValid(id)) return null;
