@@ -1,5 +1,6 @@
 import About from "@/components/home/About";
 import Banner from "@/components/home/Banner";
+import HowItWorks from "@/components/home/HowItWorks";
 import Services from "@/components/home/Services";
 import Testimonial from "@/components/home/Testimonial";
 import { authOptions } from "@/lib/authOption";
@@ -16,6 +17,10 @@ export default async function Home() {
 
       <section className="md:w-11/12 mx-auto">
         <About/>
+      </section>
+
+      <section className="md:w-11/12 mx-auto">
+        <HowItWorks/>
       </section>
 
       <section className="md:w-11/12 mx-auto">

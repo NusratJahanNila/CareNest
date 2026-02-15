@@ -107,14 +107,6 @@ export default function Testimonial() {
             </div>
           ))}
         </div>
-        
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <p className="text-gray-500 mb-4">Join 500+ happy families who trust CareNest</p>
-          <button className="btn bg-white border-2 border-[#3b4b21] text-[#3b4b21] hover:bg-[#3b4b21] hover:text-white px-8 py-3 rounded-full transition-all">
-            Share Your Story
-          </button>
-        </div>
       </div>
     </section>
   );

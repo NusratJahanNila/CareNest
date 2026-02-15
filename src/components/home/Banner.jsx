@@ -1,5 +1,7 @@
 // components/Banner.jsx
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Banner () {
   return (
@@ -19,9 +21,9 @@ export default function Banner () {
               </span>
               </p>
               
-              <button className='btn bg-[#3b4b21] hover:bg-[#2a3718] text-white border-none px-8 py-3 text-lg rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105'>
-                Find a Caregiver
-              </button>
+              <Link href={"/services"} className='btn bg-[#3b4b21] hover:bg-[#2a3718] text-white border-none px-8 mt-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105'>
+                Find a Caregiver <FaArrowRightLong />
+              </Link>
             </div>
 
             {/* RIGHT SIDE - Image with Stats Below */}

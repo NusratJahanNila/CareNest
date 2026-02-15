@@ -59,7 +59,7 @@ export default function About () {
           <div className='flex-1'>
             <h3 className='text-3xl md:text-4xl font-bold text-[#2C3E50] mb-6'>
               We Believe Everyone Deserves{' '}
-              <span className='text-[#3b4b21]'>Quality Care</span>
+              <span className='text-primary'>Quality Care</span>
             </h3>
 
             <p className='text-lg text-gray-600 mb-8 leading-relaxed'>
