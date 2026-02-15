@@ -47,13 +47,13 @@ const ServiceDetails = async({ params }) => {
         }).format(amount);
     };
 
-    console.log(service); // Debug: check what data you're getting
+    console.log(service); 
 
     return (
         <main className="bg-white">
             {/* Hero Section with Image and Basic Info */}
             <section className="relative bg-linear-to-r from-[#3b4b21]/60 to-[#9CAF88]/30 py-12">
-                <div className="container mx-auto px-4">
+                <div className="max-w-11/12 mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                         
                         {/* Left Column - Image */}
@@ -150,8 +150,8 @@ const ServiceDetails = async({ params }) => {
             </section>
 
             {/* Details Grid Section */}
-            <section className="py-16 bg-white">
-                <div className="container mx-auto px-4">
+            <section className="py-16 bg-white ">
+                <div className="max-w-11/12 mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         
                         {/* Left Column - Main Content */}
@@ -329,7 +329,7 @@ const ServiceDetails = async({ params }) => {
 
             {/* Reviews Section */}
             <section className="py-16 bg-[#F8FAF4]">
-                <div className="container mx-auto px-4">
+                <div className="max-w-11/12 mx-auto px-4">
                     <div className="flex items-center justify-between mb-8">
                         <h2 className="text-2xl lg:text-3xl font-bold text-[#2C3E50]">
                             Customer Reviews
