@@ -1,7 +1,7 @@
 'use client'
 import { signIn } from 'next-auth/react'
 import { useParams, useSearchParams } from 'next/navigation'
-import { FaGoogle } from 'react-icons/fa'
+import { FcGoogle } from 'react-icons/fc'
 import Swal from 'sweetalert2'
 
 export const SocialLogin = () => {
@@ -24,9 +24,9 @@ export const SocialLogin = () => {
     <div className='flex gap-3 mt-4'>
       <button
         onClick={handleSignIn}
-        className='btn btn-outline btn-error flex-1'
+        className='btn btn-outline btn-primary flex-1 rounded-xl'
       >
-        <FaGoogle className='text-lg' />
+        <FcGoogle className='text-lg' />
         Google
       </button>
     </div>

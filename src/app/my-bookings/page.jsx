@@ -7,15 +7,15 @@ import { authOptions } from "@/lib/authOption";
 export default async function MyBookingsPage() {
   const session = await getServerSession(authOptions);
   
-  if (!session?.user?.email) {
-    return (
-      <div className="min-h-screen bg-gray-50 py-10">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="text-red-500">Please log in to view your bookings</p>
-        </div>
-      </div>
-    );
-  }
+  // if (!session?.user?.email) {
+  //   return (
+  //     <div className="min-h-screen bg-gray-50 py-10">
+  //       <div className="max-w-5xl mx-auto px-4 text-center">
+  //         <p className="text-red-500">Please log in to view your bookings</p>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   // Pass the user's email to filter bookings
   const bookings = await getUserBookings(session.user.email);
